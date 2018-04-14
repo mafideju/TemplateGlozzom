@@ -6,6 +6,7 @@
 	<title>Glozzom Maffee Template</title>
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -139,9 +140,117 @@
 		</div>
 	</section>
 
+<!-- VIDEO PLAY SECTION -->
+
+	<section id="video-play">
+		<div class="dark-overlay">
+			<div class="row">
+				<div class="col">
+					<div class="container p-5 mt-5">
+						<a href="#" class="video" data-video="https://www.youtube.com/embed/Ye7FKc1JQe4" data-toggle="modal" data-target="#videoModal">
+							<i class="fa fa-play"></i>
+						</a>
+						<h2 class="mt-4">Listen to <em>Tears for Fears - Shout</em></h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-- PHOTO GALLERY -->
+
+	<section id="gallery" class="py-5">
+		<div class="container">
+			<h1 class="text-center">Photo Gallery</h1>
+			<p class="text-center">Check Out Our Photos!</p>
+			<div class="row mb-4">
+				<div class="col-md-4">
+					<a href="../img/g1.jpg" data-toggle="lightbox" data-gallery="img-gallery">
+						<img src="../img/g1.jpg" alt="business gallery" class="img-fluid">
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="../img/g2.jpg" data-toggle="lightbox" data-gallery="img-gallery">
+						<img src="../img/g2.jpg" alt="sports gallery" class="img-fluid">
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="../img/g3.jpg" data-toggle="lightbox" data-gallery="img-gallery">
+						<img src="../img/g3.jpg" alt="animals gallery" class="img-fluid">
+					</a>
+				</div>
+			</div>
+			<div class="row mb-4">
+				<div class="col-md-4">
+					<a href="../img/g4.jpg" data-toggle="lightbox" data-gallery="img-gallery">
+						<img src="../img/g4.jpg" alt="abstract gallery" class="img-fluid">
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="../img/g5.jpg" data-toggle="lightbox" data-gallery="img-gallery">
+						<img src="../img/g5.jpg" alt="city gallery" class="img-fluid">
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="../img/g6.jpg" data-toggle="lightbox" data-gallery="img-gallery">
+						<img src="../img/g6.jpg" alt="nature gallery" class="img-fluid">
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- NEWSLETTER SECTION	 -->
+
+	<section id="newsletter" class="text-center p-5 bg-dark text-white">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h1>Sign Up For Our Newsletter</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate commodi ullam distinctio sint assumenda, nulla ipsam eaque molestiae. Error, perferendis.</p>
+					<form class="form-inline justify-content-center">
+						<label for="name" class="sr-only">Name </label>
+						<input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="Name">
+
+						<label for="email" class="sr-only">Email </label>
+						<input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="Email">
+						<button class="btn btn-primary" type="submit">Submit</button>
+					</form>
+				</div> 
+			</div>
+		</div>
+	</section>
+
+	<!-- FOOTER SECTION -->
+	<footer id="main-footer" class="text-center p-4">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<p>Direitos Reservados &copy; 2018 MAFFEE / Traversy Media</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+<!-- VIDEO MODAL -->
+	
+	<div class="modal fade" id="videoModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button class="close" data-dismiss="modal"><span>&times;</span></button>
+					<iframe width="100%" height="315" src="https://www.youtube.com/embed/Ye7FKc1JQe4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+	<script src="js/main.js"></script>
+
 </body>
 </html>
