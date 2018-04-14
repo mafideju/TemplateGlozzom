@@ -25,7 +25,8 @@ gulp.task('serve',['sass'], function(){
 	gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss','src/scss/*.scss'],['sass']);
 	gulp.watch("src/*.html").on('change', browserSync.reload);
 });
-// FONTS E FONT-AWESOME TO SRC FOLDER
+// MOVER OS ARQUIVOS ONDE ESTÃO AS FONTES 
+/// FONTS E FONT-AWESOME PARA O FOLDER SRC
 gulp.task('fonts', function(){
 	return gulp.src('node_modules/font-awesome/fonts/*')
 	.pipe(gulp.dest("src/fonts"));
@@ -34,4 +35,6 @@ gulp.task('fa', function(){
 	return gulp.src('node_modules/font-awesome/css/font-awesome.min.css')
 	.pipe(gulp.dest("src/css"));
 }); 
+//DIZER AO GULP QUE POR DEFAULT ELE DEVE EXECUTAR O SEGUINTE ARRAY DE TAREFAS
+// COM AS 4 TAREFAS CRIADAS ACIMA
 gulp.task('default',['js','serve','fa','fonts']);
