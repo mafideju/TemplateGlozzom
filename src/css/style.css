@@ -4,8 +4,8 @@ body {
 .navbar .nav-link {
   font-size: .85em;
   text-transform: uppercase;
-  padding-left: 1em important;
-  padding-right: 1em important; }
+  padding-left: 1em !important;
+  padding-right: 1em !important; }
 
 .navbar .nav-item.active {
   border-left: #444 3px solid; }
@@ -65,10 +65,22 @@ body {
   height: 200px;
   background: url("../img/image1.jpg");
   background-position: 0 -360px;
-  backgound-attachment: fixed;
+  background-attachment: fixed;
   color: #fff;
   border-bottom: 1px #eee solid;
   padding-top: 50px; }
 
 #about img {
   margin-top: -40px; }
+
+.sticky {
+  position: sticky; }
+
+#faq .card {
+  border: coral 1px solid; }
+  #faq .card a {
+    color: coral;
+    text-decoration: none; }
+
+#faq .card-body, #faq .card-header {
+  background: #333; }
